@@ -35,7 +35,7 @@ void PrintArray(int[] array)
     Console.WriteLine($"{array[array.Length - 1]}");
 }
 
-int GetPosNumber(int[] array)
+int CountPosNumber(int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -46,5 +46,5 @@ int GetPosNumber(int[] array)
 }
 
 PrintArray(result);
-int res = GetPosNumber(result);
+int res = CountPosNumber(result);
 Console.WriteLine($"Количество положительных чисел: {res}");
